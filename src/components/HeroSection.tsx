@@ -33,17 +33,17 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-wrap gap-4 pt-4 fade-in-delay-3">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
+              <a href="https://github.com/Rishujss" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
+              <a href="https://www.linkedin.com/in/rishabhsrivastava13/" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
+              <a href="https://leetcode.com/u/Rishu_13/" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
                 <ExternalLink size={20} />
                 <span className="sr-only">LeetCode</span>
               </a>
-              <a href="https://hackerrank.com" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
+              <a href="https://www.hackerrank.com/profile/rishabhsrivasta9" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
                 <ExternalLink size={20} />
                 <span className="sr-only">HackerRank</span>
               </a>
