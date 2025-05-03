@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Briefcase, GraduationCap, Heart } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const AboutSection = () => {
   return (
@@ -19,34 +20,11 @@ const AboutSection = () => {
                   Professional Background
                 </h3>
                 <p className="text-muted-foreground">
-                  Software Engineer with hands-on experience building robust, scalable backend systems for financial institutions.I am currently working at Nucleus Software and has a proven track record of reducing bug resolution time and improving system performance.
+                  Software Engineer with 3 years of hands-on experience building robust, scalable backend systems for financial institutions. I am currently working at Nucleus Software and have a proven track record of reducing bug resolution time and improving system performance.
                 </p>
                 <p className="text-muted-foreground">
-                  With strong expertise in Java, Spring, and Hibernate, Rishabh specializes in developing high-performance applications that meet strict quality standards and business requirements.
+                  With strong expertise in Java, Spring, and Hibernate, I specialize in developing high-performance applications that meet strict quality standards and business requirements.
                 </p>
-              </div>
-              
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold flex items-center">
-                  <span className="text-primary mr-2">
-                    <GraduationCap size={24} />
-                  </span>
-                  Education
-                </h3>
-                <div className="space-y-3">
-                  <div className="border-l-2 border-primary pl-4 py-1">
-                    <h4 className="font-medium">B.Tech in Electronics and Communication Engineering</h4>
-                    <p className="text-sm text-muted-foreground">JSS Academy of Technical Education | 7.77 CGPA | 2016 - 2020</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4 py-1">
-                    <h4 className="font-medium">12th Standard</h4>
-                    <p className="text-sm text-muted-foreground">Saraswati Shishu Mandir Senior Secondary School | 87% | 2014 - 2015</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4 py-1">
-                    <h4 className="font-medium">10th Standard</h4>
-                    <p className="text-sm text-muted-foreground">Saraswati Shishu Mandir Senior Secondary School | 9.0 CGPA | 2012 - 2013</p>
-                  </div>
-                </div>
               </div>
               
               <div className="space-y-4">
@@ -67,53 +45,54 @@ const AboutSection = () => {
           </div>
           
           <div className="col-span-1 lg:col-span-5">
-            <div className="bg-background p-6 rounded-lg shadow-lg border border-border">
-              <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
-              
-              <div className="space-y-4">
-                <div className="flex gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">01</div>
-                  <div>
-                    <h4 className="font-medium">Backend Expert</h4>
-                    <p className="text-sm text-muted-foreground">Specialized in Java, Spring Boot, and Hibernate</p>
-                  </div>
+            <Card className="bg-background shadow-lg border border-border">
+              <CardHeader>
+                <CardTitle>Education</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="rounded-lg bg-card p-4 transition-all hover:shadow-md">
+                  <h4 className="font-medium text-primary">B.Tech in Electronics and Communication Engineering</h4>
+                  <p className="text-sm text-muted-foreground">JSS Academy of Technical Education | 7.77 CGPA | 2016 - 2020</p>
                 </div>
                 
-                <div className="flex gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">02</div>
-                  <div>
-                    <h4 className="font-medium">Performance Optimizer</h4>
-                    <p className="text-sm text-muted-foreground">Reduced query execution time by 80%</p>
-                  </div>
+                <div className="rounded-lg bg-card p-4 transition-all hover:shadow-md">
+                  <h4 className="font-medium text-primary">12th Standard</h4>
+                  <p className="text-sm text-muted-foreground">Saraswati Shishu Mandir Senior Secondary School | 87% | 2014 - 2015</p>
                 </div>
                 
-                <div className="flex gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">03</div>
-                  <div>
-                    <h4 className="font-medium">Bug Solver</h4>
-                    <p className="text-sm text-muted-foreground">Maintained zero daily customer bug count</p>
-                  </div>
+                <div className="rounded-lg bg-card p-4 transition-all hover:shadow-md">
+                  <h4 className="font-medium text-primary">10th Standard</h4>
+                  <p className="text-sm text-muted-foreground">Saraswati Shishu Mandir Senior Secondary School | 9.0 CGPA | 2012 - 2013</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="mt-6 bg-background shadow-lg border border-border">
+              <CardHeader>
+                <CardTitle>Professional Summary</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex flex-col space-y-2 p-4 rounded-lg bg-card hover:shadow-md transition-all">
+                  <h4 className="font-medium text-primary">Backend Expert</h4>
+                  <p className="text-sm text-muted-foreground">Specialized in Java, Spring Boot, and Hibernate</p>
                 </div>
                 
-                <div className="flex gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">04</div>
-                  <div>
-                    <h4 className="font-medium">Award Winner</h4>
-                    <p className="text-sm text-muted-foreground">Multiple Spot Awards for code quality and timely delivery</p>
-                  </div>
+                <div className="flex flex-col space-y-2 p-4 rounded-lg bg-card hover:shadow-md transition-all">
+                  <h4 className="font-medium text-primary">Performance Optimizer</h4>
+                  <p className="text-sm text-muted-foreground">Reduced query execution time by 80%</p>
                 </div>
                 
-                <div className="mt-6 pt-6 border-t border-border">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm">Years of Experience</span>
-                    <span className="font-semibold">5+</span>
-                  </div>
-                  <div className="w-full bg-secondary rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: '75%' }}></div>
-                  </div>
+                <div className="flex flex-col space-y-2 p-4 rounded-lg bg-card hover:shadow-md transition-all">
+                  <h4 className="font-medium text-primary">Bug Solver</h4>
+                  <p className="text-sm text-muted-foreground">Maintained zero daily customer bug count</p>
                 </div>
-              </div>
-            </div>
+                
+                <div className="flex flex-col space-y-2 p-4 rounded-lg bg-card hover:shadow-md transition-all">
+                  <h4 className="font-medium text-primary">Award Winner</h4>
+                  <p className="text-sm text-muted-foreground">Multiple Spot Awards for code quality and timely delivery</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
