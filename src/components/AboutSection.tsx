@@ -19,7 +19,7 @@ const AboutSection = () => {
                   Professional Background
                 </h3>
                 <p className="text-muted-foreground">
-                  Rishabh Srivastava is a Software Engineer with hands-on experience building robust, scalable backend systems for financial institutions. He is currently working at Nucleus Software and has a proven track record of reducing bug resolution time and improving system performance.
+                  Software Engineer with hands-on experience building robust, scalable backend systems for financial institutions.I am currently working at Nucleus Software and has a proven track record of reducing bug resolution time and improving system performance.
                 </p>
                 <p className="text-muted-foreground">
                   With strong expertise in Java, Spring, and Hibernate, Rishabh specializes in developing high-performance applications that meet strict quality standards and business requirements.
