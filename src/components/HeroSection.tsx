@@ -1,12 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const HeroSection = () => {
   const [typedText, setTypedText] = useState('');
   const fullText = "Building scalable and efficient enterprise applications.";
-  
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -16,15 +13,9 @@ const HeroSection = () => {
         clearInterval(timer);
       }
     }, 100);
-    
     return () => clearInterval(timer);
   }, []);
-
-  return (
-    <section 
-      id="home" 
-      className="min-h-screen flex flex-col justify-center pt-20 pb-12 overflow-hidden"
-    >
+  return <section id="home" className="min-h-screen flex flex-col justify-center pt-20 pb-12 overflow-hidden">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
           <div className="w-full lg:w-2/3 space-y-6">
@@ -42,52 +33,31 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-wrap gap-4 pt-4 fade-in-delay-3">
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors"
-              >
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
                 <Github size={20} />
               </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors"
-              >
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a 
-                href="https://leetcode.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors"
-              >
+              <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
                 <ExternalLink size={20} />
                 <span className="sr-only">LeetCode</span>
               </a>
-              <a 
-                href="https://hackerrank.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors"
-              >
+              <a href="https://hackerrank.com" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
                 <ExternalLink size={20} />
                 <span className="sr-only">HackerRank</span>
               </a>
             </div>
             
             <div className="pt-6 fade-in-delay-4">
-              <Button 
-                onClick={() => {
-                  const contactSection = document.getElementById('contact');
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
-                className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-md transition-colors text-lg"
-              >
+              <Button onClick={() => {
+              const contactSection = document.getElementById('contact');
+              if (contactSection) {
+                contactSection.scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }
+            }} className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-md transition-colors text-lg">
                 Get in Touch
               </Button>
             </div>
@@ -97,11 +67,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-r from-primary to-accent p-1">
                 <div className="w-full h-full rounded-full overflow-hidden bg-background">
-                  <img 
-                    src="/lovable-uploads/b74eb783-118c-490f-92c8-4337f05d079f.png" 
-                    alt="Rishabh Srivastava"
-                    className="w-full h-full object-cover profile-image"
-                  />
+                  <img alt="Rishabh Srivastava" className="w-full h-full object-cover profile-image" src="/lovable-uploads/f6d26b35-79b4-43c0-9e50-f579bbaa3b93.png" />
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-card rounded-full flex items-center justify-center border-4 border-background">
@@ -111,8 +77,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
