@@ -1,13 +1,10 @@
-
 import React from 'react';
 import { Briefcase, GraduationCap, Heart, Award, Star } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-gradient-to-b from-background to-card">
+  return <section id="about" className="py-20 bg-gradient-to-b from-background to-card">
       <div className="container px-4 md:px-6">
         <h2 className="section-title mb-12 text-center">About Me</h2>
         
@@ -33,7 +30,7 @@ const AboutSection = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     Software Engineer with <span className="text-primary font-medium">3 years</span> of hands-on experience 
                     building robust, scalable backend systems for financial institutions. Currently delivering 
-                    high-impact solutions at <span className="text-primary font-medium">Nucleus Software</span> 
+                    high-impact solutions at <span className="text-primary font-medium">Nucleus Software </span> 
                     with proven success in reducing bug resolution time and optimizing system performance.
                   </p>
                 </div>
@@ -57,11 +54,9 @@ const AboutSection = () => {
                     Interests & Hobbies
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {["Chess", "Writing", "Reading Books", "Cooking"].map((hobby) => (
-                      <Badge key={hobby} variant="outline" className="bg-primary/5 hover:bg-primary/20 px-3 py-1 text-sm transition-all">
+                    {["Chess", "Writing", "Reading Books", "Cooking"].map(hobby => <Badge key={hobby} variant="outline" className="bg-primary/5 hover:bg-primary/20 px-3 py-1 text-sm transition-all">
                         {hobby}
-                      </Badge>
-                    ))}
+                      </Badge>)}
                   </div>
                 </div>
               </CardContent>
@@ -81,36 +76,27 @@ const AboutSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 pt-5">
-                {[
-                  {
-                    title: "B.Tech in Electronics and Communication Engineering",
-                    institution: "JSS Academy of Technical Education",
-                    grade: "7.77 CGPA",
-                    period: "2016 - 2020"
-                  },
-                  {
-                    title: "12th Standard",
-                    institution: "Saraswati Shishu Mandir Senior Secondary School",
-                    grade: "87%",
-                    period: "2014 - 2015"
-                  },
-                  {
-                    title: "10th Standard",
-                    institution: "Saraswati Shishu Mandir Senior Secondary School",
-                    grade: "9.0 CGPA",
-                    period: "2012 - 2013"
-                  }
-                ].map((education, index) => (
-                  <div 
-                    key={index}
-                    className="rounded-lg bg-card/30 p-5 transition-all hover:shadow-md hover:translate-y-[-2px] border border-accent/10"
-                  >
+                {[{
+                title: "B.Tech in Electronics and Communication Engineering",
+                institution: "JSS Academy of Technical Education",
+                grade: "7.77 CGPA",
+                period: "2016 - 2020"
+              }, {
+                title: "12th Standard",
+                institution: "Saraswati Shishu Mandir Senior Secondary School",
+                grade: "87%",
+                period: "2014 - 2015"
+              }, {
+                title: "10th Standard",
+                institution: "Saraswati Shishu Mandir Senior Secondary School",
+                grade: "9.0 CGPA",
+                period: "2012 - 2013"
+              }].map((education, index) => <div key={index} className="rounded-lg bg-card/30 p-5 transition-all hover:shadow-md hover:translate-y-[-2px] border border-accent/10">
                     <h4 className="font-semibold text-accent">{education.title}</h4>
                     <p className="text-sm text-muted-foreground mt-1">
                       {education.institution} | {education.grade} | {education.period}
                     </p>
-                  </div>
-                ))}
+                  </div>)}
               </CardContent>
             </Card>
 
@@ -121,39 +107,27 @@ const AboutSection = () => {
                 <Separator className="my-2 bg-primary/20" />
               </CardHeader>
               <CardContent className="space-y-3 pt-3">
-                {[
-                  {
-                    title: "Backend Expert",
-                    description: "Specialized in Java, Spring Boot, and Hibernate"
-                  },
-                  {
-                    title: "Performance Optimizer",
-                    description: "Reduced query execution time by 80%"
-                  },
-                  {
-                    title: "Bug Solver",
-                    description: "Maintained zero daily customer bug count"
-                  },
-                  {
-                    title: "Award Winner",
-                    description: "Multiple Spot Awards for code quality and timely delivery"
-                  }
-                ].map((item, index) => (
-                  <div 
-                    key={index} 
-                    className="flex flex-col space-y-1 p-4 rounded-lg bg-card/30 hover:bg-card/50 hover:shadow-md transition-all border border-primary/10"
-                  >
+                {[{
+                title: "Backend Expert",
+                description: "Specialized in Java, Spring Boot, and Hibernate"
+              }, {
+                title: "Performance Optimizer",
+                description: "Reduced query execution time by 80%"
+              }, {
+                title: "Bug Solver",
+                description: "Maintained zero daily customer bug count"
+              }, {
+                title: "Award Winner",
+                description: "Multiple Spot Awards for code quality and timely delivery"
+              }].map((item, index) => <div key={index} className="flex flex-col space-y-1 p-4 rounded-lg bg-card/30 hover:bg-card/50 hover:shadow-md transition-all border border-primary/10">
                     <h4 className="font-medium text-primary">{item.title}</h4>
                     <p className="text-sm text-muted-foreground">{item.description}</p>
-                  </div>
-                ))}
+                  </div>)}
               </CardContent>
             </Card>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
