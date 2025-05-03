@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Mail, Phone, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -124,7 +123,7 @@ const ContactSection = () => {
                 <h4 className="font-medium mb-3">Connect on Social</h4>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/Rishujss" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-background hover:bg-primary text-foreground hover:text-white rounded-full p-3 transition-colors"
@@ -132,12 +131,30 @@ const ContactSection = () => {
                     <Github size={20} />
                   </a>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/rishabhsrivastava13/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-background hover:bg-primary text-foreground hover:text-white rounded-full p-3 transition-colors"
                   >
                     <Linkedin size={20} />
+                  </a>
+                  <a 
+                    href="https://leetcode.com/u/Rishu_13/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-background hover:bg-primary text-foreground hover:text-white rounded-full p-3 transition-colors"
+                  >
+                    <ExternalLink size={20} />
+                    <span className="sr-only">LeetCode</span>
+                  </a>
+                  <a 
+                    href="https://www.hackerrank.com/profile/rishabhsrivasta9" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-background hover:bg-primary text-foreground hover:text-white rounded-full p-3 transition-colors"
+                  >
+                    <ExternalLink size={20} />
+                    <span className="sr-only">HackerRank</span>
                   </a>
                 </div>
               </div>

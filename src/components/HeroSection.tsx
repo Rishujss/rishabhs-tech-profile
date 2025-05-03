@@ -1,9 +1,12 @@
+
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const HeroSection = () => {
   const [typedText, setTypedText] = useState('');
   const fullText = "Building scalable and efficient enterprise applications.";
+  
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -15,7 +18,9 @@ const HeroSection = () => {
     }, 100);
     return () => clearInterval(timer);
   }, []);
-  return <section id="home" className="min-h-screen flex flex-col justify-center pt-20 pb-12 overflow-hidden">
+  
+  return (
+    <section id="home" className="min-h-screen flex flex-col justify-center pt-20 pb-12 overflow-hidden">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
           <div className="w-full lg:w-2/3 space-y-6">
@@ -51,13 +56,13 @@ const HeroSection = () => {
             
             <div className="pt-6 fade-in-delay-4">
               <Button onClick={() => {
-              const contactSection = document.getElementById('contact');
-              if (contactSection) {
-                contactSection.scrollIntoView({
-                  behavior: 'smooth'
-                });
-              }
-            }} className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-md transition-colors text-lg">
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                }
+              }} className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-md transition-colors text-lg">
                 Get in Touch
               </Button>
             </div>
@@ -77,6 +82,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
