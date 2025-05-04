@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Mail, Phone, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Code, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -144,7 +145,7 @@ const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="bg-background hover:bg-primary text-foreground hover:text-white rounded-full p-3 transition-colors"
                   >
-                    <ExternalLink size={20} />
+                    <Code size={20} />
                     <span className="sr-only">LeetCode</span>
                   </a>
                   <a 
@@ -153,7 +154,7 @@ const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="bg-background hover:bg-primary text-foreground hover:text-white rounded-full p-3 transition-colors"
                   >
-                    <ExternalLink size={20} />
+                    <Code2 size={20} />
                     <span className="sr-only">HackerRank</span>
                   </a>
                 </div>

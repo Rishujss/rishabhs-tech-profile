@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Code, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -45,11 +45,11 @@ const HeroSection = () => {
                 <Linkedin size={20} />
               </a>
               <a href="https://leetcode.com/u/Rishu_13/" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
-                <ExternalLink size={20} />
+                <Code size={20} />
                 <span className="sr-only">LeetCode</span>
               </a>
               <a href="https://www.hackerrank.com/profile/rishabhsrivasta9" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary text-foreground rounded-full p-3 transition-colors">
-                <ExternalLink size={20} />
+                <Code2 size={20} />
                 <span className="sr-only">HackerRank</span>
               </a>
             </div>
